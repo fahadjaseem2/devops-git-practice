@@ -65,12 +65,22 @@ What it does: Shows staged changes
 
 DAY-23
 
-`git branch`
+## Branching & Remotes
 
-Create a new branch called feature-1
-
-`git branch feature-1`
-
-Create and switch to feature-2 in one command
-
-`git checkout -b feature-2` **OR** `git switch -c feature-2`  **-c = create** 
+| Command | Description | Example |
+|---------|-------------|---------|
+| `git branch` | List all local branches | `git branch` |
+| `git branch <branch-name>` | Create a new branch | `git branch feature-1` |
+| `git checkout <branch>` | Switch to a branch | `git checkout feature-1` |
+| `git checkout -b <branch>` | Create and switch to a new branch | `git checkout -b feature-2` |
+| `git switch <branch>` | Switch to a branch (modern) | `git switch main` |
+| `git switch -c <branch>` | Create and switch to a new branch (modern) | `git switch -c feature-3` |
+| `git branch -d <branch>` | Delete a branch (safe) | `git branch -d feature-2` |
+| `git branch -D <branch>` | Force delete an unmerged branch | `git branch -D old-feature` |
+| `git remote add origin <url>` | Add a remote repository | `git remote add origin https://github.com/user/repo.git` |
+| `git push -u origin <branch>` | Push branch to remote and set upstream | `git push -u origin main` |
+| `git push origin <branch>` | Push branch to remote | `git push origin feature-1` |
+| `git pull` | Fetch and merge from remote | `git pull origin main` |
+| `git fetch` | Download objects and refs from remote | `git fetch upstream` |
+| `git remote add upstream <url>` | Add original repo as upstream (for forks) | `git remote add upstream https://github.com/original/repo.git` |
+| `git merge upstream/main` | Merge upstream changes into current branch | `git merge upstream/main` |
