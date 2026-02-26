@@ -66,3 +66,7 @@ What it does: Shows staged changes
 DAY-23
 
 `git branch`
+
+Create a new branch called feature-1
+
+`git branch feature-1` 
