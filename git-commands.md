@@ -69,4 +69,8 @@ DAY-23
 
 Create a new branch called feature-1
 
-`git branch feature-1` 
+`git branch feature-1`
+
+Create and switch to feature-2 in one command
+
+`git checkout -b feature-2` **OR** `git switch -c feature-2`  **-c = create** 
